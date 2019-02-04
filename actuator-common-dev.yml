@@ -1,0 +1,10 @@
+#springboot2.0. 的配置项为：
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+      

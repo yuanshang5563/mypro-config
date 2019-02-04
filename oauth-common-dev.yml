@@ -1,0 +1,9 @@
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-uri: http://localhost:8086/oauth/token_key
+    client:
+      access-token-uri: http://localhost:8086/oauth/token
+      user-authorization-uri: http://localhost:8086/oauth/authorize
+      
