@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: mypro-core-admin
+    
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}:${spring.application.name}
+    health-check-url-path: /actuator/health #健康检查的地址（依赖spring-boot-starter-actuator）
+  client:
+    register-with-eureka: true #是否向服务注册中心注册自己
+    fetch-registry: true #是否检索服务
+    
+security:
+  oauth2:
+    client:
+      client-id: client_vue
+      client-secret: 123456
+      grant-type: password
+      scope: server
+
+
+
