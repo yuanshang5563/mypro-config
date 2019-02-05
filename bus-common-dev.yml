@@ -1,8 +1,8 @@
 spring:  
   rabbitmq: 
-    host: localhost
+    host: 192.168.1.103
     port: 5672
-    virtual-host: /virtual_spring_cloud
+    virtual-host: /virtual-mypro
     username: yuanshang
     password: 123456   
 
