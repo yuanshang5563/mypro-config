@@ -21,10 +21,7 @@ zuul:
       sensitiveHeaders:
     mypro-auth-center:
       path: /authCenter/**
-      sensitiveHeaders:
-    mypro-core-log:
-      path: /coreLogs/**
-      sensitiveHeaders:      
+      sensitiveHeaders:     
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
